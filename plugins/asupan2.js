@@ -13,7 +13,7 @@ ${json.result.video.likes} Like
 ${json.result.video.comments} Komentar
 ${json.result.video.share} Dishare
 ${json.result.video.ago}` , m)
-}
+} 
 handler.command = /^asupan2$/i
 
 handler.premium = true
