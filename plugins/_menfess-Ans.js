@@ -1,10 +1,11 @@
-/**
- * Jangan Di Hapus!!
- * 
- * Ingin bikin fitur tapi tidak bisa coding?
- * hubungi: https://wa.me/6288279268363
- * 
- */
+/*
+
+Jangan Di Hapus!
+
+Buatan FokusDotId (Fokus ID)
+https://github.com/FokusDotId/
+
+*/
 
 
 export async function before(m) {
