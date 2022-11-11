@@ -60,7 +60,7 @@ const time = moment.tz('Asia/Jakarta').format('HH')
             }
         }
     })
-}
+} 
 handler.tags = ['downloader']
 handler.command = /^(tt|tiktok)(a(udio)?|mp3|sound)(dl)?(download(er)?)?$/i
 
