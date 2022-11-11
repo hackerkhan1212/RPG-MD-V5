@@ -48,6 +48,7 @@ Terimakasih Juga Untuk Kang Banned:
 • Rendycraft  
 • Krizynofc
 • Nadin
+• Fokusdotid
 • Mursid
 • Jarot
 • Tio
