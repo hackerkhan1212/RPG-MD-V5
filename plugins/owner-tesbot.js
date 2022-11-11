@@ -29,7 +29,7 @@ ${botdate}
             }
         }
     })
-}
+} 
 handler.help = ['tesbot']
 handler.tags = ['owner']
 handler.command = ['tesbot']
