@@ -301,7 +301,7 @@ let thm = args[0]
             }
 
 handler.help =['ephotox']
-handler.tags =['nuli']
+handler.tags =[''maker']
 handler.command = /^(ephotox|ephotoh)$/i
 
 handler.limit = true
