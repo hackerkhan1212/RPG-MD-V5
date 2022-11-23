@@ -7,9 +7,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
     let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-  if (!mime) throw 'Fotonya Mana?'
-  if (!/image\/(jpe?g|png)/.test(mime)) throw `Tipe ${mime} tidak didukung!`
-    if (!text) return m.reply(`Balas gambar dengan perintah
+  if (!mime) throw 'Where is the picture?'
+  if (!/image\/(jpe?g|png)/.test(mime)) throw `Type ${mime} not supported!`
+    if (!text) return m.reply(`Reply pictures with commands
     ${usedPrefix + command} effect
 *List effect:*
 2colors-canvas
@@ -444,7 +444,7 @@ yo`)
     let img = await q.download?.()
     let url = await uploadImage(img)
     
-    let images = `https://violetics.pw/api/photomaker/${encodeURIComponent(text)}?apikey=beta&image=${encodeURIComponent(url)}`
+    let images = `https://violetics.pw/api/photomaker/${encodeURIComponent(text)}?apikey=${global.violetics}&image=${encodeURIComponent(url)}`
     let caption = `*⎔┉━「 ${command} 」━┉⎔*
 🤠 *Query* : ${url}`
   await conn.sendButton(m.chat, caption, wm, images, [
