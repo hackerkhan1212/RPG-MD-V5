@@ -96,9 +96,10 @@ global.APIKeys = { // APIKey Here
   'https://hardianto.xyz': 'hardianto',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
-global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
+global.keysZens = ['285c513f6556', '68637855ac', '66aa575454', 'ead81e891b', '8331b843f7', 'ec3fe6f05831', '0c65d4c037']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.lolkeysapi = ['85faf717d0545d14074659ad']
+global.violetics = '39f5-d6ba-9be3'
 
 /*============== APIKEY ================*/
 global.bear = 'VBkM7rbU'
@@ -126,7 +127,7 @@ global.thumbs = ['https://telegra.ph/file/3b7ec1308edb07983efef.png']
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.thumbBanned = 'https://telegra.ph/file/3b7ec1308edb07983efef.png'
 global.thumbWarn = 'https://telegra.ph/file/3b7ec1308edb07983efef.png'
-global.botintro = 'Hello, Meet me Yuki BOT I will help you anytime & anywhere, I am a WhatsApp bot assistant created by *ᴹᴿ᭄ 𝕀𝕥𝕩_𝕚𝕓𝕣𝕒𝕙𝕚𝕞 ×፝֟͜×* I was released on\n🗓 ️_16/10/2022_'
+global.botintro = 'Hello, Meet me 𝕀𝕥𝕩_𝕚𝕓𝕣𝕒𝕙𝕚𝕞 BOT I will help you anytime & anywhere, I am a WhatsApp bot assistant created by *ᴹᴿ᭄ 𝕀𝕥𝕩_𝕚𝕓𝕣𝕒𝕙𝕚𝕞 ×፝֟͜×* I was released on\n🗓 ️_16/10/2022_'
 global.intro = 'https://telegra.ph/file/3b7ec1308edb07983efef.png'
 /*============== GLOBAL BIO ==============*/
 global.nameowner = 'ᴹᴿ᭄𝕀𝕥𝕩_𝕚𝕓𝕣𝕒𝕙𝕚𝕞 ×፝֟͜×'
@@ -382,7 +383,7 @@ global.flaaa = [
 'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg']
 /*============== STICKER WM ==============*/
 global.stickpack = 'ᴍᴀᴅᴇ ʙʏ'
-global.stickauth = `King Of Bear`
+global.stickauth = `𝕀𝕥𝕩_𝕚𝕓𝕣𝕒𝕙𝕚𝕞`
 
 global.multiplier = 38 // The higher, The harder levelup
 
