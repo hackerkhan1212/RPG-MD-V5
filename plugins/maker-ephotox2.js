@@ -84,7 +84,7 @@ yellowglass-effect`)
             }
 
 handler.help = ['ephotox2']
-handler.tags = ['nuli']
+handler.tags = ['maker']
 handler.command = /^(ephotox2|ephotoh2)$/i
 
 handler.limit = true
