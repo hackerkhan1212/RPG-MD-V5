@@ -7,5 +7,5 @@ conn.sendButton(m.chat, `*${command}*`.trim(), author, url, [['🔄 NEXT 🔄', 
 }
 handler.help = ['animebooty']
 handler.tags = ['nsfw', 'premium']
-handler.command = /^(meme)$/i
+handler.command = /^(animebooty)$/i
 export default handler
