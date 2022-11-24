@@ -75,8 +75,9 @@ global.APIs = { // API Prefix
   ana: 'https://anabotofc.herokuapp.com/',
   amel: 'https://melcanz.com',
   hardianto: 'https://hardianto.xyz',
+  violetics : 'https://violetics.pw', 
   botstyle: 'https://botstyle-api.herokuapp.com',
-adiisus: 'https://adiixyzapi.herokuapp.com',
+  adiisus: 'https://adiixyzapi.herokuapp.com',
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
   kanx: 'https://kannxapi.herokuapp.com/'
 }
@@ -89,6 +90,7 @@ global.APIKeys = { // APIKey Here
   'https://saipulanuar.ga/': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
+   'https://violetics.pw': '39f5-d6ba-9be3'
   'https://melcanz.com': 'wEDTUsWj',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://server-api-rey.herokuapp.com': 'apirey',
@@ -99,7 +101,7 @@ global.APIKeys = { // APIKey Here
 global.keysZens = ['285c513f6556', '68637855ac', '66aa575454', 'ead81e891b', '8331b843f7', 'ec3fe6f05831', '0c65d4c037']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.lolkeysapi = ['85faf717d0545d14074659ad']
-global.violetics = '39f5-d6ba-9be3'
+global.violetics = 'c9ec-5226-5a86'
 
 /*============== APIKEY ================*/
 global.bear = 'VBkM7rbU'
