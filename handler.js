@@ -823,15 +823,15 @@ esteh: 0,
                 m.isCommand = true
                 let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
                 if (xp > 200)
-                    this.sendButton(m.chat, `[❗] *Sepertinya Anda Bermain Curang, Menggunakan Calculator*`, author, null, [['Buy Limit', '/buy limit'], ['Menu', '/menu']] , m)
+                    this.sendButton(m.chat, `[❗] *Looks Like You're Playing Cheat, Using Calculator*`, author, null, [['Buy Limit', '/buy limit'], ['Menu', '/menu']] , m)
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.sendButton(m.chat, `[❗] *Limit Anda Habis, Beberapa Command Tidak Bisa Di Akses*`, author, null, [['Buy Limit', '/buy limit'], ['Menu', '/menu']] , m)
+                    this.sendButton(m.chat, `[❗] *Your Limit Is Expired, Some Commands Can't Be Accessed*`, author, null, [['Buy Limit', '/buy limit'], ['Menu', '/menu']] , m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.sendButton(m.chat, `[💬] Diperlukan level *${plugin.level}* untuk menggunakan perintah ini. Level kamu *${_user.level}🎋*\n*${plugin.level}* level is required to use this command. Your level is *${_user.level}🎋*`, author, null,[['Ok', 'ok']] , m)
+                    this.sendButton(m.chat, `[💬] *${plugin.level}* level required to use this command. your level *${_user.level}🎋*\n*${plugin.level}* level is required to use this command. Your level is *${_user.level}🎋*`, author, null,[['Ok', 'ok']] , m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -873,7 +873,7 @@ esteh: 0,
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*📮HAY OWNER*\n\n_Laporan Eror terdeteksi_\n\nEROR DI 🗂️ Plugin:* ${m.plugin}\n*📤 Dari:* ${m.sender}\n*🗳️ID:* ${m.chat}\n*📑 Command Eror:* ${usedPrefix}${command} ${args.join(' ')}\n⚠️ *Logs Eror:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
+                                    m.reply(`*📮HAY OWNER*\n\n_Error report detected_\n\nEROR DI 🗂️ Plugin:* ${m.plugin}\n*📤 Dari:* ${m.sender}\n*🗳️ID:* ${m.chat}\n*📑 Command Eror:* ${usedPrefix}${command} ${args.join(' ')}\n⚠️ *Logs Eror:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -1027,7 +1027,7 @@ export async function deleteUpdate(message) {
 Untuk mematikan fitur ini, ketik
 *.off antidelete*
 
-Untuk menghapus pesan yang dikirim BOT, reply pesan dengan perintah
+To delete messages sent by BOT, reply to messages with commands
 *.delete*`, author, [['OFF FITURE', '.off antidelete'],['MENU', '.menu']], msg, adReply)
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
@@ -1043,34 +1043,34 @@ global.dfail = (type, m, conn) => {
     let nmsr = `👋 Hai *@${m.sender.split("@")[0]}*, `
     let msg = {
         rowner: `${nmsr}\n 
-Perintah ini hanya dapat digunakan oleh *OWNER* !`,
+This command can only be used by *OWNER* !`,
         owner: `${nmsr}\n
-Perintah ini hanya dapat digunakan oleh *Owner Bot* !`,
+This command can only be used by the *Owner Bot* !`,
         mods: `${nmsr}\n 
-Perintah ini hanya dapat digunakan oleh *Moderator* !`,
+This command can only be used by *Moderators* !`,
         premium: `${nmsr}\n
-Perintah ini hanya untuk member *Premium* !`,
+This order is for *Premium members only* !`,
         group: `${nmsr}\n
-Perintah ini hanya dapat digunakan di grup !`,
+This command can only be used in groups!`,
         private: `${nmsr}\n
-Perintah ini hanya dapat digunakan di Chat Pribadi !`,
+This command can only be used in Private Chat !`,
         admin: `${nmsr}\n
-Perintah ini hanya untuk *Admin* grup !`,
+This command is only for *Admins* of the group!`,
         botAdmin: `${nmsr}\n
-Jadikan bot sebagai *Admin* untuk menggunakan perintah ini !`,
+Make the bot *Admin* to use this command!`,
         nsfw: `${nmsr}\n
-NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini !`,
+NSFW is not active, please contact Team Bot Discussion to activate this feature !`,
         rpg: `${nmsr}\n
-RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini !`,
+RPG is not active, please contact Team Bot Discussion to activate this feature !`,
         restrict: `${nmsr}\n
-Fitur ini di *disable* !`
+This feature is * disabled* !`
     }[type]
     if (msg) return conn.sendButton(m.chat, danied, msg, `${imgr + 'Accses Danied'}`, [['MENU', '.menu'],['OWNER', '.menu']],m)
     
      let msgg = {
-    	unreg: `${nmsr}\nSilahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Click button di bawah*\n\n*Kalian bisa ikuti langkah verify selanjutnya*\n\nLAKI-LAKI ATAU PEREMPUAN ?`
+    	unreg: `${nmsr}\nPlease register to the database first to use this bot further *Click the button below*\n\n*You can follow the next verification step*\n\nMAN OR FEMALE ?`
 }[type]
-if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, `${imgr + 'Verify'}`, [['LAKI-LAKI', '/verify'],['PEREMPUAN', '/verify']],m)
+if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, `${imgr + 'Verify'}`, [['MAN', '/verify'],['WOMAN', '/verify']],m)
 }    
     
 let file = global.__filename(import.meta.url, true)
